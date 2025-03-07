@@ -5,8 +5,11 @@ import { CartContext } from '../navigation/CartContext'; // Import CartContext f
 import styles from '../styles/HomeScreen';
 
 const products = [
-  { id: '1', name: 'Product A', price: 1000 },
-  { id: '2', name: 'Product B', price: 15 },
+  { id: '1', name: 'General Admission Ticket', price: 1000 },
+  { id: '2', name: 'Upper Box Ticket', price: 1600 },
+  { id: '3', name: 'Lower Box Ticket', price: 2000 }, 
+  { id: '4', name: 'VIP Ticket', price: 4500 },
+  { id: '5', name: 'SVIP Ticket', price: 6500 },
 ];
 
 const HomeScreen: React.FC = () => {
