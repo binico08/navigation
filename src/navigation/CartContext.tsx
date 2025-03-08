@@ -14,11 +14,11 @@ interface CartContextType {
   clearCart: () => void;
 }
 
-export const CartContext = createContext<CartContextType | undefined>(undefined);
-export type { CartContextType };
+export const CartContext = createContext<CartContextType>(undefined!);
+export type { CartContextType, CartItem };
 
 export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState<CartItem[]>([]);
 
   const addToCart = (product: CartItem) => {
     setCart((prevCart) => {
